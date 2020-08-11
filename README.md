@@ -174,12 +174,6 @@ function reverseString(s) {
 
 // Day 3: Throw
 
-/*
- * Complete the isPositive function.
- * If 'a' is positive, return "YES".
- * If 'a' is 0, throw an Error with the message "Zero Error"
- * If 'a' is negative, throw an Error with the message "Negative Error"
- */
 function isPositive(a) {
     if (a <= 0) {
         throw (a === 0 ? new Error("Zero Error") :
@@ -190,4 +184,19 @@ function isPositive(a) {
     }
 }
 
+//Day 4: Create a Rectangle Object
 
+function Rectangle(a, b) {
+    this.length = a;
+    this.width = b;
+    this.perimeter = 2 * (a+b);
+    this.area = a*b;
+}
+
+//Day 4: Count Objects
+
+function getCount(objects) {
+return objects.filter(item =>item.x===item.y).length;
+}
+
+//
